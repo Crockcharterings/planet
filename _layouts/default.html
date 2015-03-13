@@ -1,74 +1,144 @@
-<!--
-jQuery Feeds and site by Camilo Aguilar.
-
-Except for the icons and the js libraries this site is UNLICENSED (http://unlicense.org/).
-
-Icons by Icon8 (http://icons8.com/) and Icon Dock (http://icondock.com).
--->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<title>Planet DALIBO</title>
+<meta name="description" content="" />
+<meta name="author" content="DALIBO L'expertise PostgreSQL" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ui/font-awesome.min.css">
+<link rel="stylesheet" href="ui/bootstrap.min.css">
+<link rel="stylesheet" href="ui/bootstrap-theme.min.css">
+<link rel="stylesheet" href="ui/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="ui/styles.css"/>
 
-		<title>{{page.title}} &bull; jQuery Feeds</title>
-		<meta name="description" content="{{page.description}}" />
-		<meta name="author" content="Camilo Aguilar" />
-		
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="{{ site.basepath }}/ui/styles.css"/>
-				
-		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-		<!-- <link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" /> -->
-		
-		<!-- Analytics -->
-		{% include ga.html %}
-	</head>
+<link rel="shortcut icon" href="/favicon.ico">
 
-	<body>
-		<div class="{{page.class}} page">
-			<header class="header">
-				<hgroup class="brand">
-					<h1 class="title">jQuery Feeds</h1>
-					<!-- <h2 class="slogan">News and social activity streams made easy</h2> -->
-				</hgroup>
+<!-- Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXX-Y']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script');
+ga.type = 'text/javascript';
+ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
 
-				<p class="description">RSS/Atom aggregator with templating and cross-domain support</p>
-				
-				<nav class="menu">
-					<a class="download item" title="Get jquery.feeds.min.js (3.7kb)" href="https://raw.github.com/camagu/jquery-feeds/master/jquery.feeds.min.js">Download</a>
-					<a class="documentation item" href="{{ site.basepath }}/">Read the docs</a>
-					<a class="demo item" href="{{ site.basepath }}/demos">Launch the demo</a>
-				</nav>
-				
-				<nav class="submenu">
-					<a class="test item" title="qUnit tests" href="{{ site.basepath }}/test">Run the tests</a>
-					<a class="github item" href="https://github.com/camagu/jquery-feeds/">Fork on GitHub</a>
-					<a href="https://twitter.com/share" class="twitter item twitter-share-button" data-url="http://camagu.github.com/jquery-feeds/" data-text="Easily create news streams and social activity widgets using the #jQuery Feeds Plugin" data-via="camagu_">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				</nav>
-			</header>
+<body>
+<div class="demos page">
+<header class="header">
+<h1 class="title">DALIBO's News Feed</h1>
 
-			<div class="content">
-{{content}}
-			</div>
-			
-			<footer class="footer">
-				<p>jQuery Feeds and site by Camilo Aguilar. Except for the icons and the js libraries this site is <a href="http://unlicense.org/" title="Check lincense specifics">UNLICENSED</a>. Icons by <a href="http://icons8.com/">Icon8</a> and <a href="http://icondock.com">Icon Dock</a>.</p>
-			</footer>
-		</div>
-		
-		<!-- Include jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		
-		<!-- Include site script -->
-		<script src="{{ site.basepath }}/ui/site.js"></script>
-		
-		{% if page.is_demo %}{% include scripts.html %}{% endif %}
+<p class="description">Read the latest PostgreSQL news from our team</p>
+<div class="">
+<a class="btn btn-default btn-lg" href="french.html"> Français</a>
+<a class="btn  btn-default btn-lg" href="english.html"> English</a>
+<a class="btn  btn-default btn-lg" href="index.html"> All</a>
+</div>
+<p/>
+<div class="icons">
+<a class="" href="http://www.dalibo.com"><i class="fa fa-rocket fa-2x"></i></a>
+<a class="" href="http://www.twitter.com/dalibo"><i class="fa fa-twitter fa-2x"></i></a>
+<a class="" href=".rss"><i class="fa fa-rss fa-2x"></i></a>
+<a class="" href="http://blog.dalibo.com"><i class="fa fa-newspaper-o  fa-2x"></i></a>
+<a class="" href="http://blog.dalibo.com"><i class="fa fa-linkedin   fa-2x"></i></a>
+<a class="" href="http://blog.dalibo.com"><i class="fa fa-github   fa-2x"></i></a>
+<a class="" href="http://blog.dalibo.com"><i class="fa fa-google-plus   fa-2x"></i></a>
+</div>
+</header>
 
-	</body>
+<div class="content">
+
+<div class="feed">&nbsp;</div>
+<script type="text/html" id="entryTmpl">
+<article class="<!=source!> ">
+<h2><a class="" href="<!=link!>" title="<!=feedDescription!>"><!=title!></a></h2>
+<!=source!> <span class="publishedDate"><!=publishedDate!></span> 
+<div class="content"><!=contentSnippet!>
+<a href="<!=link!>">(...)</a>
+</div>
+<hr/>
+</article>
+</script>
+
+</div>
+<footer class="footer">
+<p>Powered by jQuery Feeds and css by Camilo Aguilar. 
+</p>
+</footer>
+</div>
+<!-- Include jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- Include site script -->
+<!-- Load jQuery Feeds -->
+<script src="jquery.feeds.js" charset="utf-8"></script>
+<!-- Load moment.js, used to format dates, totally optional -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/1.6.2/moment.min.js" charset="utf-8"></script>
+<!-- Using Pure CSS Masonry which is not supported by IE. Fallback: original lib. -->
+<!--[if lte IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/2.1.04/jquery.masonry.min.js"></script><![endif]-->
+<script>
+$(document).ready(function() {
+/* ==================================================================
+Demo scripts
+================================================================== */
+// Attach feeds to container - $( container ).feeds({ options...});
+$('.feed').feeds({
+// Feeds: Set keys and paths of feeds
+feeds : {
+{{ content }}
+},
+// Preprocess: manipulated entries data before it's rendered
+preprocess : function(feed) {
+
+// standard snippet are too short, take more characters
+var new_snippet = this.content.substring(0, 1024);
+
+this.contentSnippet = new_snippet;
+
+
+// Inside the callback 'this' corresponds to the entry being processed
+if (!this.publishedDate) {
+return;
+}
+// Example: Using moment.js to format dates as time ago, totally optional.
+this.publishedDate = moment(this.publishedDate).fromNow();
+},
+// entryTemplate: template used to render entries. Can be a string, an id or a callback.
+// Using the id of the template defined in the markup.
+entryTemplate : 'entryTmpl',
+// loadingTemplate: template used to show while entries are being retrieved. Can be a string, an id or a callback.
+loadingTemplate: '<p class="loading entry">Loading entries, hold on.</p>',
+// onComplete: called when all entries are rendered.
+onComplete : function(entries) {
+// Setting all links as external.
+// Inside the callback 'this' corresponds to the feeds' container.
+$(this).find('a').attr('target', '_blank');
+// Pure CSS Masonry fallback for IE
+if ($.browser.msie && parseInt($.browser.version.substr(0, 1)) < 10) {
+$('.feed').masonry({
+gutterWidth: 12
+});
+}
+// Tracking outbound links, ignore
+$(this).find('a').click(function() {
+_gaq.push(['_trackEvent', 'Outbound Demo Links', 'Click', $(this).attr('href')]);
+});
+}
+});
+});
+</script>
+
+</body>
 </html>

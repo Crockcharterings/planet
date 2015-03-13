@@ -73,58 +73,20 @@ body {
     line-height: 1.5em;
     min-width: 320px;
     
-    /*
-       Uncomment to check vertical rythm
-       --------------------------------------------------------------------------
-       http://forrst.com/posts/Check_Your_Vertical_Rhythm_With_CSS3_gradients-6XE */
-      
-    /*
-    background-image: -webkit-linear-gradient(#eee .05em, transparent .05em);
-    background-image:    -moz-linear-gradient(#eee 1px, transparent 1px);
-    background-image:     -ms-linear-gradient(#eee 1px, transparent 1px);
-    background-image:      -o-linear-gradient(#eee 1px, transparent 1px);
-    background-image:         linear-gradient(#eee 1px, transparent 1px);
-    background-size: 100% 1.5em;
-    */
 }
 
-/* ==========================================================================
-   Links
-   ========================================================================== */
-a {
-	color: #318CE7;
-}
-
-a:focus {
-    outline: thin dotted;
-}
-
-a:active,
-a:hover {
-    outline: 0;
-}
 
 /* ==========================================================================
    Typography
    ========================================================================== */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-weight:600;
-}
-
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     color: #FFFFFF;
-    line-height: 1.5em;
-    margin: 1.125em 0 0.375em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1em;
     margin: 1.5em 0 0.5em;
 }
@@ -163,10 +125,6 @@ blockquote {
     margin: 1em 40px;
 }
 
-i,
-em {
-	
-}
 
 dfn {
     font-style: italic;
@@ -275,9 +233,13 @@ sub {
 .header {
 	background-color: #318CE7;
 	margin: 0 0 1.5em 0;
-	padding: 3em;
+	padding: 1em;
 	text-align: center;
 	color : #FFFFFF;
+}
+
+.icons {
+	color :  #FFFFFF;
 }
 
 
@@ -286,7 +248,7 @@ sub {
    -------------------------------------------------------------------------- */
   
 .page > .content {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin: 0 auto;
 	max-width: 1114px;
 	padding: 0 2em;
@@ -310,25 +272,6 @@ sub {
 	margin-bottom: 1.2em;
 }
 
-
-/* --------------------------------------------------------------------------
-   Feed's container
-   -------------------------------------------------------------------------- */
-  
-.feed {
-	column-gap: 1em;
-	-moz-column-gap: 1em;
-	-webkit-column-gap: 1em;
-	column-width: 359px;
-	-moz-column-width: 359px;
-	-webkit-column-width: 359px;
-	font-size: 0.75em;
-	line-height: 1.5em;
-
-                column-width: auto;
-                -moz-column-width: auto;
-                -webkit-column-width: auto;
-}
 
 /* --------------------------------------------------------------------------
    Loading template
@@ -390,32 +333,6 @@ sub {
 	line-height: 16px;
 	padding: 0 1em;
 	vertical-align: middle;
-}
-
-.feed > .entry .link {
-	background: url(icons.png) no-repeat;
-	display: inline-block;
-	height: 16px;
-	text-indent: -999em;
-	vertical-align: middle;
-	width: 16px;
-}
-
-.feed > .facebook.entry .link {
-	background-position: 0 -20px;
-}
-
-.feed > .pinterest.entry .link {
-	background-position: -20px -20px;
-}
-
-.feed > .twitter.entry .link {
-	
-	background-position: -40px -20px;
-}
-
-.feed > .tumblr.entry .link {
-	background-position: -60px -20px;
 }
 
 /* ==========================================================================
